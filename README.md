@@ -58,7 +58,7 @@ GPU2 : gpu2.main <name_of_the_machine_on_which_it_will_be_run>
 ```
     ./gpu2.experiment "kronos.gpu2"
 ```
-
+    
 ### It will create the csv eigenvector files and also a csv of measurement formatted in this way:
 
 ### CPU & GPU1 each row represent an experiment, each value represent elapsed time to do this task expressend in seconds
