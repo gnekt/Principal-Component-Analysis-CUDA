@@ -1,4 +1,4 @@
-# PCA project realized by Giacomo Nunziati and Christian Di Maio
+# PCA project realized by Giacomo Nunziati(@GiacomoNunziati) and Christian Di Maio
 
 ## Result of the work and how we construct the algorithm
 
@@ -20,7 +20,7 @@ https://drive.google.com/file/d/13pUux-1u03KkTQMhSiXNDL2ghPydaUmr/view?usp=shari
 Given that the input file has a csv format and it is also pre-processed (no value different from numbers are admitted),
 you can call the PCA procedure as following:
 
-CPU : main <dataset_csv> <column_separator> <number_of_rows_csv> <number_of_columns_csv> 
+CPU : cpu1.main <dataset_csv> <column_separator> <number_of_rows_csv> <number_of_columns_csv> 
 - Eg. 
 ```
     ./main "soil_data.csv" "," 3109 32
@@ -38,13 +38,13 @@ GPU2 : gpu2.main <dataset_csv> <column_separator> <number_of_rows_csv> <number_o
 ---
 
 ## How we do the experiments in a more efficient way?
-We create 3 different programs that will do the job for us, if you are curious to see how it works the make file include also the compile for the experiment program, but it is more hardcoded and require that "hapt_train_set.csv" and "soil_data.csv" are in the same directory of the executable.
+We create 3 different programs that will do the job for us, if you are curious to see how it works the make file include also the compile for the experiment program, but it is more hardcoded and require that "soil_data.csv" are in the same directory of the executable.
 
 
 CPU : cpu.experiment <name_of_the_machine_on_which_it_will_be_run> 
 - Eg. 
 ```
-    cpu.experiment "kronos.cpu"
+    ./cpu1.experiment "kronos.cpu"
 ```
 
 GPU1 : gpu1.main <name_of_the_machine_on_which_it_will_be_run> 
@@ -72,6 +72,8 @@ normalization_mean,normalization_std,normalization_min,normalization_max,covaria
 ---
 
 ## Curiosity 
-If you are very curious here you can see all the result in terms of computational time: https://docs.google.com/spreadsheets/d/1VZl1sm0TSgjVY3uonsJZ0mZhHJEjjh3B_HvNUMFAsfU/edit?usp=sharing
+-If you are very curious here you can see all the result in terms of computational time: https://docs.google.com/spreadsheets/d/1VZl1sm0TSgjVY3uonsJZ0mZhHJEjjh3B_HvNUMFAsfU/edit?usp=sharing
 
+-Here it is the data set that we used 
+https://www.kaggle.com/cdminix/us-drought-meteorological-data
 
