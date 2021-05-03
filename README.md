@@ -35,6 +35,8 @@ GPU2 : gpu2.main <dataset_csv> <column_separator> <number_of_rows_csv> <number_o
 ```
     ./gpu2.main "soil_data.csv" "," 3109 32
 ```
+*It will produce an output file EigenVectors.csv that contains all the eigenvector ordered by importance and that represent the 99% of information retrieved by the covariance matrix, near zero-s eigenvalues are avoided*
+
 ---
 
 ## How we do the experiments in a more efficient way?
