@@ -1,4 +1,4 @@
-# PCA in CUDA realized by Giacomo Nunziati(@GiacomoNunziati) and Christian Di Maio
+# PCA in CUDA realized by Giacomo Nunziati(@nunziati) and Christian Di Maio
 
 ## Result of the work and how we construct the algorithm
 
