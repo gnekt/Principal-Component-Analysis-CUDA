@@ -334,10 +334,10 @@ run: build
 	$(EXEC) ./gpu1.main
 
 clean:
-	rm -f gpu1.main gpu1.main.o
-	rm -rf ./bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)/gpu1.main
-	rm -f gpu1.experiment gpu1.experiment.o
-	rm -rf ./bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)/gpu1.experiment
+	rm -f gpu2.main gpu2.main.o
+	rm -rf ./bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)/gpu2.main
+	rm -f gpu2.experiment gpu2.experiment.o
+	rm -rf ./bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)/gpu2.experiment
 
 
 clobber: clean
